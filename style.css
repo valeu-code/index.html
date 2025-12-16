@@ -1,3 +1,16 @@
+/* Skip link accessibility */
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: yellow;
+  padding: 5px;
+}
+
+/* Body and texts */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -8,6 +21,8 @@ header {
 }
 
 nav {
+  display: inline-block;
+  width: 80%;
   background-color: #333;
 }
 
@@ -18,13 +33,23 @@ main {
 
 footer {
   background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
-li {
+/* Comment li */
+/* li {
   display: inline-block;
   width: 150px;
+} */
+
+/* Immagine nav */
+nav img {
+  width: 10%;
 }
 
+/* Titoli e paragrafi */
 h1 {
   text-align: center;
   font-family: Georgia, serif;
@@ -34,3 +59,24 @@ h1 {
 p {
   line-height: 1.6;
 }
+
+/* Grid class */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* Flex class */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
